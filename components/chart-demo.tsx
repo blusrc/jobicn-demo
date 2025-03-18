@@ -9,9 +9,8 @@ export function ChartDemo() {
       <ChartAreaDemo />
       <ChartBarDemo />
       <ChartBarMixed />
-      <div className="@6xl:hidden">
-        <ChartLineDemo />
-      </div>
+
+      <ChartLineDemo />
     </div>
   );
 }
