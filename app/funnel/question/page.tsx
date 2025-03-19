@@ -47,7 +47,7 @@ export default function QuizDemo() {
             <RadioGroup defaultValue="starter" className="w-full">
               {plans.map((plan) => (
                 <Label
-                  className="hover:bg-accent/50 flex items-center gap-3 rounded-lg border py-4 px-3"
+                  className="has-[[aria-checked=true]]:border-blue-600 has-[[aria-checked=true]]:border-bg-primary/20 shadow-xs bg-linear-to-t hover:to-muted/50 to-background from-muted dark:from-muted/50 dark:border-border border-border transition-all duration-300 ease-in-out hover:scale-[99.5%] flex items-center gap-3 rounded-lg border py-4 px-3"
                   key={plan.id}
                 >
                   <RadioGroupItem
@@ -58,7 +58,7 @@ export default function QuizDemo() {
 
                   <div className="font-medium text-md grow">{plan.name}</div>
                   <div className="text-muted-foreground text-xs leading-[inherit]">
-                    $12/mo
+                    {plan.price}
                   </div>
                 </Label>
               ))}
